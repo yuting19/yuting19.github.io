@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/index.css">  -->
+</head>
+
+<body class="bus">
+    <div class="container">
+        <div class="row">
+            <div class="busForm col-md-8 col-lg-5">
+                <div class="page-header">
+                    <h4>
+                        <i class="fa-solid fa-bus"></i>
+                        公車時刻查詢</h4>
+                </div>
+                <!-- getRouteNameBG -->
+                <div class="row getRouteNameBG">
+                    <div class="  col-md-7 inputBG">
+                        <input class="form-control" placeholder="請輸入公車號碼" id="inputRouteName">
+                    </div>
+                    <div class=" col-md-5 buttonBG">
+                        <button class="btn btn-primary" id="getRouteName">查詢公車號碼</button>
+                    </div>
+                </div>
+                <!-- busList -->
+                <div id="busList">
+                    <!-- <button class="btn btn-secondary">307</button>
+                    <button class="btn btn-secondary">307-西藏</button>
+                    <button class="btn btn-secondary">307</button>
+                    <button class="btn btn-secondary">307-西藏</button>
+                    <button class="btn btn-secondary">307</button>
+                    <button class="btn btn-secondary">307-西藏</button> -->
+                </div>
+                <!-- busInfo -->
+                <div id="busInfo">
+                    <!-- <button class="btn btn-primary busBtn active" id="direction0">去程往:撫遠街</button>
+                    <button class="btn btn-primary busBtn" id="direction1">返程往:板橋</button> -->
+                </div>
+                <!-- alertInfo -->
+                <div id="alertInfo" style="display: none;">
+                    <fieldset disabled>
+                        <div class="form-group">
+                            我要去
+                            <input type="text" class="form-control" id="alertStop" placeholder="請從下列列表點選..">
+                            站，
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        倒數
+                        <input type="text" class="form-control" id="alertTime">
+                        分鐘後提醒我
+                    </div>
+                    <button class="btn btn-primary" id="startTimeBtn">開始倒數</button>
+                </div>
+                <!--  -->
+                <div id="alertCountDownBG" style="display: none;">
+                    <span id="alertCountDown">倒數10分鐘</span>
+                </div>
+                <!-- allStopBG -->
+                <div id="allStopBG">
+                    <!-- timeList -->
+                    <div id="timeList">
+                        <!-- <ul class="dataList">
+                            <li><span class="yellow">尚未發車</span></li>
+                            <li><span class="yellow">尚未發車</span></li>
+                            <li><span class="yellow">尚未發車</span></li>
+                            <li><span class="red">進站中</span></li>
+                            <li><span class="blue">5分鐘</span></li>
+                            <li><span class="blue">6分鐘</span></li>
+                            <li><span class="blue">10分鐘</span></li>
+                            <li><span class="blue">15分鐘</span></li>
+                        </ul> -->
+                    </div>
+                    <!-- stopList -->
+                    <div id="stopList">
+                        <!-- <ul class="dataList">
+                            <li>
+                                臺北客運板橋前站(藝文)
+                                <input type="radio" name="stop" id="194687" value="臺北客運板橋前站(藝文)">
+                            </li>
+                            <li>
+                                臺北客運板橋前站(藝文)
+                                <input type="radio" name="stop" id="194687" value="臺北客運板橋前站(藝文)">
+                            </li>
+                            <li>
+                                臺北客運板橋前站(藝文)
+                                <input type="radio" name="stop" id="194687" value="臺北客運板橋前站(藝文)">
+                            </li>
+                            <li>
+                                臺北客運板橋前站(藝文)
+                                <input type="radio" name="stop" id="194687" value="臺北客運板橋前站(藝文)">
+                            </li>
+
+                        </ul> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- API資料 -->
+    <!-- <h3>取得憑證資料:</h3> -->
+    <div id="accesstoken" class="align-text-bottom  ">        
+    </div>
+
+    <!-- <h3>api 資料:</h3> -->
+    <div id="apireponse" class="align-text-bottom">        
+    </div>
+
+
+
+<script type="text/javascript" src="./js/vendor.js"></script><script type="text/javascript" src="./js/bus.js"></script><script type="text/javascript" src="./js/style.js"></script></body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/index.css">  -->
+    <style>
+    .loading{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+        background-color: #333;
+        
+    }
+
+    .loader-inner{
+        text-align: center;
+        margin-top: 45vh;
+    }
+</style>
+</head>
+<body>
+
+    <div class="loading">
+    <div class="loader-inner ball-clip-rotate"></div>
+</div>
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">TEST</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aq.html">aq</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="scanner.html">scanner</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bus.html">bus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pushevent.html">push event</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="container">
+        <h2> about </h2>
+        <hr>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Provide contextual
+                    </button>
+                    </h2>
+                </div>
+            
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>
+                            Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+                        </p>
+                        <img src="images/cat3.jpg?f84ea70d" class="img-fluid" alt="">
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Collapsible Group Item #2
+                    </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                    Some placeholder content for the second accordion panel. This panel is hidden by default.
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Collapsible Group Item #3
+                    </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                    <div class="imgbox"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 pt-3 pb-3">
+    <div class="container text-center">
+        <!-- <i class="fas fa-user-circle fa-2x"></i> -->
+        <i class="fa-brands fa-facebook-square  fa-2x"></i>
+        <i class="fa-brands fa-line  fa-2x"></i>
+    </div>
+    <div class="text-center">
+        © 2020 Copyright:<a href="/"> MDBootstrap.com</a>
+    </div>
+</footer>
+
+<script type="text/javascript" src="./js/aq.js"></script><script type="text/javascript" src="./js/vendor.js"></script><script type="text/javascript" src="./js/style.js"></script></body>
+</html>
