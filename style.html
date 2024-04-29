@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <title>小廢文 sosonews.today</title>
+    <style>
+        .loader-wrapper {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            /* right: 0; */
+            z-index: 99999;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .loaderText{
+            color: #ccc;
+            margin-top: 7px;
+        }
+
+        .loader {
+            display: inline-flex;
+            gap: 10px;
+        }
+        .loader:before,
+        .loader:after {
+            content: "";
+            height: 20px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background:
+                radial-gradient(farthest-side,#000 95%,#0000) 35% 35%/6px 6px no-repeat
+                #fff;
+            animation: l5 3s infinite;
+        }
+
+        
+        @keyframes l5 {
+            0%,11%   {background-position:35% 35%}
+            14%,36%  {background-position:65% 35%}
+            38%,61%  {background-position:65% 65%}
+            64%,86%  {background-position:35% 65%}
+            88%,100% {background-position:35% 35%}
+        }
+
+
+        .loader-wrapper.fade-out {
+            animation: fadeOut 0.5s ease forwards;
+        }
+
+
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        
+
+    </style>
+
+    <script src="https://cdn.tiny.cloud/1/6rt5wv52qv3kzr19dp21erzoymwjqz5wnj2xji46g01kuinf/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+</head>
+<body>
+    
+<script type="text/javascript" src="./js/vendor.js"></script><script type="text/javascript" src="./js/style.js"></script></body>
+</html>
